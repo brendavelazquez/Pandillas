@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	font-family:"Lucida Console", Monaco, monospace;
+	background-color:#B108E0;
+}
+.contenedor
+{
+	margin:auto;
+	display:table;
+}
+h1
+{
+	float:left;
+	color:#fff;
+	position:relative;
+	font-size:36px;
+}
+h1 span
+{
+	position:absolute;
+	right:0;
+	width:0;
+	border-left:1px solid #000;
+	background-color:#B108E0;
+	
+	animation:maquina 12s infinite alternate steps(62);
+	
+}
+@keyframes maquina
+{
+	from{
+		width:100%;
+	}
+	to
+	{
+		width::0;
+	}
+
+}
